@@ -52,6 +52,7 @@ for i = 1:K
     % obliczanie błędu
     d = outputTrainData(n); % d - target - diagnoza lekarza
     outputError = d - outputOutput;
+    disp(outputError);
    
     % warstwy wyjściowej
     outputDelta = outputError;
